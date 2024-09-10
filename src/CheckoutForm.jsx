@@ -22,7 +22,7 @@ const CheckoutForm = () => {
     setError(null);
 
     try {
-      const { data: clientSecret } = await axios.post('http://localhost:5000/create-payment-intent', {
+      const { data: clientSecret } = await axios.post('https://server-test-y4xw.onrender.com/create-payment-intent', {
         amount: 1099,  
       });
 
@@ -122,7 +122,7 @@ const styles = {
   },
   cardContainer: {
     borderRadius: '10px',
-    padding: '10px',
+    padding: '5px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     backgroundColor: '#ffffff',
     width: '100%',
